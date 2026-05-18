@@ -1,0 +1,16 @@
+namespace: dev
+
+gateway:
+  image: arlg92/gateway-service:latest
+  servicePort: 80
+  containerPort: 8000
+
+users:
+  image: arlg92/users-service:latest
+  servicePort: 80
+  containerPort: 8000
+
+orders:
+  image: arlg92/orders-service:latest
+  servicePort: 80
+  containerPort: 8000
