@@ -1,0 +1,11 @@
+GitHub :
+https://github.com/DataScientest/gitlab_devops_exams
+
+GitLab :
+https://gitlab.com/arlauro/gitlab-devops-exam
+
+DockerHub :
+https://hub.docker.com/u/arlg92
+
+Images Docker :
+https://hub.docker.com/repositories/arlg92
