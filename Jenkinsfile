@@ -5,16 +5,21 @@ pipeline {
 
         stage('Build Docker') {
             steps {
-                sh 'docker-compose build'
+                sh '''
+                export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+                docker-compose build
+                '''
             }
         }
 
         stage('Run App') {
             steps {
-                sh 'docker-compose up -d'
+                sh '''
+                export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
+                docker-compose up -d
+                '''
             }
         }
 
     }
 }
-
