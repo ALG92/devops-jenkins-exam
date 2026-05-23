@@ -2,10 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Test Jenkins') {
+
+        stage('Build Docker') {
             steps {
-                echo 'Hello Jenkins 🚀'
+                sh 'docker-compose build'
             }
         }
+
+        stage('Run App') {
+            steps {
+                sh 'docker-compose up -d'
+            }
+        }
+
     }
 }
+
